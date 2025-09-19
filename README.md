@@ -1,73 +1,85 @@
-# Welcome to your Lovable project
+# Zenith Fashion E-commerce
 
-## Project info
+Zenith is a premium e-commerce web application designed for modern fashion brands. It combines luxury aesthetics, a robust design system, and seamless shopping functionality to deliver an exceptional user experience.
 
-**URL**: https://lovable.dev/projects/ee5e64fa-8243-4c8e-94c2-75b132464bf1
+---
 
-## How can I edit this code?
+## Project Overview
 
-There are several ways of editing your application.
+Zenith offers a curated shopping experience with a focus on elegant design, responsive layouts, and high-end UI effects. The design system is powered by Tailwind CSS and custom CSS variables, enabling easy customization for brand colors, gradients, shadows, and transitions. Typography is elevated with Playfair Display and Inter fonts, ensuring both style and readability.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ee5e64fa-8243-4c8e-94c2-75b132464bf1) and start prompting.
+## Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Curated Product Catalog:** Rich visuals and detailed product pages for fashion items.
+- **Responsive Design:** Optimized for mobile, tablet, and desktop.
+- **Shopping Cart:** Add, remove, and manage products with smooth transitions.
+- **Premium UI Effects:** Luxury-inspired gradients, shadows, and transitions.
+- **Dark Mode:** Automatic and manual dark theme support.
+- **Customizable Design System:** Easily adjust colors, gradients, shadows, and transitions via CSS variables.
+- **Reusable Components:** Hero sections, luxury buttons, product cards, and more.
+- **Accessible UI:** Built with shadcn-ui for accessible React components.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Technologies Used
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **React** – Component-based UI library
+- **TypeScript** – Type-safe JavaScript
+- **Vite** – Fast build tool and dev server
+- **Tailwind CSS** – Utility-first CSS framework with custom layers
+- **shadcn-ui** – Accessible React UI components
+- **Google Fonts:** Playfair Display & Inter
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Design System Highlights
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Defined in `src/index.css`:
 
-# Step 3: Install the necessary dependencies.
-npm i
+- **Brand Colors:** Easily switch between light and dark palettes.
+- **Gradients & Shadows:** Luxury-inspired gradients and shadow effects for cards, buttons, and hero sections.
+- **Typography:** Playfair Display for headings, Inter for body text.
+- **Component Styles:** Custom classes for hero text, luxury buttons, product hover effects, and elegant shadows.
+- **Animations & Transitions:** Smooth and fast transitions for interactive elements.
+- **Sidebar Styling:** Dedicated variables for sidebar backgrounds, accents, borders, and rings.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+2. **Start development server:**
+   ```sh
+   npm run dev
+   ```
+3. **Build for production:**
+   ```sh
+   npm run build
+   ```
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Customization
 
-## What technologies are used for this project?
+Modify `src/index.css` to update colors, gradients, shadows, and transitions. Use Tailwind utility classes and custom layers for rapid UI changes. Apply `.luxury-shadow`, `.product-hover`, `.luxury-button`, and other custom classes for consistent styling.
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Deployment
 
-## How can I deploy this project?
+Zenith can be deployed on platforms like [Lovable](https://lovable.dev/projects/ee5e64fa-8243-4c8e-94c2-75b132464bf1) or any static hosting provider. For custom domains, use Lovable’s Project Settings > Domains.
 
-Simply open [Lovable](https://lovable.dev/projects/ee5e64fa-8243-4c8e-94c2-75b132464bf1) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## License
 
-Yes, you can!
+This project is licensed under the MIT License.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+For more details, see [README.md](README.md).
