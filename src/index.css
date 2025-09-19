@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Zenith Fashion Design System - Premium E-commerce Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Core Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    /* Fashion Brand Palette */
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
+
+    --accent: 40 45% 76%;
+    --accent-foreground: 0 0% 0%;
+
+    --luxury-gold: 40 45% 76%;
+    --luxury-gold-foreground: 0 0% 0%;
+
+    /* Neutrals */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 0%;
+
+    /* Design System */
+    --radius: 0.25rem;
+
+    /* Gradients */
+    --gradient-luxury: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-hero: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+
+    /* Shadows */
+    --shadow-luxury: 0 20px 40px -12px rgba(0, 0, 0, 0.25);
+    --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.1);
+    --shadow-elegant: 0 8px 32px -8px rgba(0, 0, 0, 0.12);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 0 0% 95%;
+
+    --accent: 40 45% 70%;
+    --accent-foreground: 0 0% 0%;
+
+    --luxury-gold: 40 45% 70%;
+    --luxury-gold-foreground: 0 0% 0%;
+
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 65%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 95%;
+
+    --gradient-luxury: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-hero: linear-gradient(135deg, rgba(0,0,0,0.9), rgba(0,0,0,0.5));
+    --shadow-luxury: 0 20px 40px -12px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  /* Fashion-specific component styles */
+  .hero-text {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+  }
+
+  .luxury-shadow {
+    box-shadow: var(--shadow-luxury);
+  }
+
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+
+  .elegant-shadow {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-fast {
+    transition: var(--transition-fast);
+  }
+
+  /* Fashion product hover effects */
+  .product-hover {
+    @apply transition-smooth hover:luxury-shadow hover:-translate-y-1;
+  }
+
+  .luxury-button {
+    @apply bg-primary text-primary-foreground px-8 py-3 transition-smooth hover:bg-accent hover:text-accent-foreground;
+  }
+
+  .outline-luxury {
+    @apply border-2 border-primary text-primary px-8 py-3 transition-smooth hover:bg-primary hover:text-primary-foreground;
+  }
+}
