@@ -68,11 +68,7 @@ Defined in `src/index.css`:
 
 Modify `src/index.css` to update colors, gradients, shadows, and transitions. Use Tailwind utility classes and custom layers for rapid UI changes. Apply `.luxury-shadow`, `.product-hover`, `.luxury-button`, and other custom classes for consistent styling.
 
----
 
-## Deployment
-
-Zenith can be deployed on platforms like [Lovable](https://lovable.dev/projects/ee5e64fa-8243-4c8e-94c2-75b132464bf1) or any static hosting provider. For custom domains, use Lovable’s Project Settings > Domains.
 
 ---
 
